@@ -28,15 +28,6 @@ const About = () => {
           React, Next.js, Node.js, and MongoDB
         </span>
       </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy watching
-        movies, playing story-driven video games, and spending time unwinding.
-        I’m passionate about{" "}
-        <span className="font-medium">learning new things</span>—lately diving
-        into <span className="font-medium">history and philosophy</span>, while
-        also teaching myself how to play the guitar.
-      </p>
     </motion.section>
   );
 };
