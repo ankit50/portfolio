@@ -29,18 +29,18 @@ const Intro = () => {
             }}
           >
             <Image
-              src="/logo.png"
+              src="/my.jpg"
               alt="ankit-kharel-logo"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-60 w-60 object-[0_-40px]  rounded-full object-cover border-white shadow-2xl"
             />
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
+            className="absolute bottom-4 right-2 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -61,10 +61,13 @@ const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Ankit Kharel.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer and lecturer</span>{" "}
-        with <span className="font-bold">5+ years</span> of experience. I enjoy
-        building <span className="italic">projects and instructing coding</span>
-        . My focus is <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">lecturer and instructor</span> with{" "}
+        <span className="font-bold">5+ years</span> of experience in teaching
+        coding. I’m also an{" "}
+        <span className="font-bold">aspiring full-stack developer</span> who
+        enjoys <span className="italic">building projects</span> and sharing
+        knowledge. My current focus is on{" "}
+        <span className="underline">React (Next.js)</span>.
       </motion.h1>
 
       <motion.div
@@ -78,6 +81,10 @@ const Intro = () => {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
@@ -94,7 +101,7 @@ const Intro = () => {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com"
+          href="https://linkedin.com/in/ankitkharel"
           target="_blank"
         >
           <BsLinkedin />
@@ -102,7 +109,7 @@ const Intro = () => {
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com"
+          href="https://github.com/ankit50"
           target="_blank"
         >
           <FaGithubSquare />

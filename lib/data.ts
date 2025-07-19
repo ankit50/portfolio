@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import medimmet from "@/public/medimmet.png";
+import ecommerce from "@/public/ecommerce.png";
+import chat from "@/public/chat.png";
 
 export const links = [
   {
@@ -35,52 +35,64 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    title: "Front-End Developer Intern",
+    company: " Gimmick Box Engineering Solutions Pvt. Ltd",
+    location: "Kathmandu, Nepal",
+    description: [
+      "Developed and maintained responsive user interfaces for commercial websites using HTML, CSS, and JavaScript.",
+      "Focused on clean design and intuitive user experience.",
+      "Collaborated on building dynamic components for real-time interactions.",
+    ],
     icon: React.createElement(LuGraduationCap),
     date: "2019",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+    title: "Assistant Teaching Professor and Project Supervisor",
+    company: "Nepal College of Information Technology (NCIT)",
+    location: "Lalitpur, Nepal",
+    description: [
+      "Instruct C/C++, Java, Data Structures & Algorithms, and Discrete Mathematics classes for undergraduate students",
+      "Supervise students’ final year and semester projects, guiding research on AI/ML and mentoring web development projects.",
+    ],
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2020 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Medimeet",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A full-stack doctor appointment platform with features like appointment booking, doctor search, video consultations and pricing feature.",
+    tags: ["Next.js", "MongoDB", "Vonage", "Clerk", "shadcn/ui"],
+    imageUrl: medimmet,
+    liveDemo: "https://medimeetbyankitkharel.vercel.app/",
+    github: "https://github.com/ankit50/medimeet",
   },
   {
-    title: "rmtDev",
+    title: "Ecommerce-forever",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "E-commerce frontend with features like latest products, cart management, checkout, and payment integration and an admin panel for managing products and orders.",
+    tags: [
+      "React.JS",
+      "JavaScript",
+      "Express.js",
+      "Tailwind",
+      "Context API",
+      "MongoDB",
+    ],
+    imageUrl: ecommerce,
+    liveDemo: "https://ecommercebyankitkharel.vercel.app/",
+    github: "https://github.com/ankit50/clothingstore",
   },
   {
-    title: "Word Analytics",
+    title: "Real Time Chat App",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      " Real-time chat application built using Socket.IO. Features include user authentication, live messaging, typing indicators, image sharing in chat,",
+    tags: ["React.js", "Express.js", "MongoDB"],
+    imageUrl: chat,
+    liveDemo: "",
+    github: "https://github.com/ankit50/Real-Time-Chat-Using-Mern",
   },
 ] as const;
 
@@ -89,19 +101,16 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
+  "JAVA",
+  "C",
+  "C++",
   "React",
   "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
 ] as const;
