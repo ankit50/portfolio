@@ -33,6 +33,7 @@ const Experience = () => {
             priority
             className="
                     rounded-full
+                    
                     object-cover
                     object-top
                     border-2 border-white

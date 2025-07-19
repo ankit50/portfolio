@@ -61,12 +61,12 @@ const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Ankit Kharel.</span> I'm a{" "}
-        <span className="font-bold">lecturer and instructor</span> with{" "}
-        <span className="font-bold">5+ years</span> of experience in teaching
+        <span className="font-bold">lecturer</span> with{" "}
+        <span className="font-bold">5+ years</span> of experience teaching
         coding. I’m also an{" "}
-        <span className="font-bold">aspiring full-stack developer</span> who
-        enjoys <span className="italic">building projects</span> and sharing
-        knowledge. My current focus is on{" "}
+        <span className="font-bold">aspiring full-stack developer</span> who{" "}
+        <span className="italic">loves building projects</span> and sharing
+        knowledge. Currently focused on{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
 

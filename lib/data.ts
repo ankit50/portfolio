@@ -43,7 +43,7 @@ export const experiencesData = [
       "Focused on clean design and intuitive user experience.",
       "Collaborated on building dynamic components for real-time interactions.",
     ],
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(CgWorkAlt),
     date: "2019",
   },
   {
